@@ -8,8 +8,9 @@ function CharacterGallery() {
     <div>
       {characterData.map(
         (character) => <Character
-        key={character.id}
+        key={character._id}
         name={character.name}
+        img={character.imgUrl}
         race={character.race}
         realm={character.realm} />
        )}
